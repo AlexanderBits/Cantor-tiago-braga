@@ -201,6 +201,36 @@ nav {
 }
 
 /* Pillars Section */
+.bio-section {
+    padding: 8rem 10%;
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+}
+
+.bio-content {
+    max-width: 800px;
+}
+
+.bio-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.bio-content p:first-child::first-letter {
+    font-size: 4rem;
+    float: left;
+    margin-right: 0.75rem;
+    line-height: 0.9;
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-gold);
+    font-weight: 900;
+}
+
 .pillars {
     display: flex;
     padding: 5rem 10%;
@@ -274,5 +304,12 @@ footer {
     }
     .pillars {
         flex-direction: column;
+    }
+    .bio-section {
+        padding: 4rem 8%;
+    }
+    .bio-content p {
+        font-size: 1.1rem;
+        text-align: left;
     }
 }
